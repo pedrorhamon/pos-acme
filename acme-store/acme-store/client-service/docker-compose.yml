@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres:9.2
+    container_name: client-database-postgres
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - TZ=GMT
+    volumes:
+      - "./data/clients/postgres:/var/lib/postgres/data"
+    ports:
+      - 5433:5433

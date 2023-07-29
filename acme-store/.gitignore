@@ -1,0 +1,9 @@
+
+.idea
+*.idea
+/idea
+/DS_Store
+/.vscode
+*.vscode
+/node_modules
+
